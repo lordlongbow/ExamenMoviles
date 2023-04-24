@@ -19,6 +19,9 @@
         <action
             android:id="@+id/action_nav_gallery_to_agregarFragment"
             app:destination="@id/agregarFragment" />
+        <action
+            android:id="@+id/action_nav_gallery_to_detalleFragment"
+            app:destination="@id/detalleFragment" />
     </fragment>
 
     <fragment
@@ -33,6 +36,15 @@
         tools:layout="@layout/fragment_agregar" >
         <action
             android:id="@+id/action_agregarFragment_to_nav_gallery"
+            app:destination="@id/nav_gallery" />
+    </fragment>
+    <fragment
+        android:id="@+id/detalleFragment"
+        android:name="com.example.examendiegoorellano.ui.gallery.DetalleFragment"
+        android:label="fragment_detalle"
+        tools:layout="@layout/fragment_detalle" >
+        <action
+            android:id="@+id/action_detalleFragment_to_nav_gallery"
             app:destination="@id/nav_gallery" />
     </fragment>
 </navigation>
